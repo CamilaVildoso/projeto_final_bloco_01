@@ -1,16 +1,5 @@
 package projeto;
-import java.util.Scanner;
-import projeto.util.Cores;
 
-public class Menu {
-
-	public static void main(String[] args) {
-		
-		Scanner leia = new Scanner(System.in);
-		
-		int opcao;
-		
-=======
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -43,7 +32,6 @@ public class Menu {
         Pedido p2 = new pedidoConfiteria (pedido.gerarNumero(),"Thiago", 2, 3, 2, 10, "si");
         
         
->>>>>>> Model_Repository
 		while (true) {
 
 			System.out.println(Cores.TEXT_PURPLE + Cores.ANSI_WHITE_BACKGROUND +"*****************************************************");
@@ -55,22 +43,14 @@ public class Menu {
 			System.out.println("            1 - Criar pedido online                  ");
 			System.out.println("            2 - Listar os produtos                   ");
 			System.out.println("            3 - Buscar produto por numero            ");
-			System.out.println("            4 - Atualizar pedido                     ");
-			System.out.println("            5 - Apagar pedido                        ");
-			System.out.println("            6 - preco total                          ");
-			System.out.println("            7 - Sair                                 ");
 			System.out.println("            4 - Atualizar pedido                    ");
 			System.out.println("            5 - Apagar pedido                        ");
 			System.out.println("            6 - Sair                                 ");
->>>>>>> Model_Repository
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
 			System.out.println("Entre com a opção desejada:                          ");
 			System.out.println("                                                     "+ Cores.TEXT_RESET);
 
-			opcao = leia.nextInt();
-			
-			if (opcao == 7) {
 			try {
 				opcao = leia.nextInt();
 			} catch(InputMismatchException e) {
@@ -81,21 +61,12 @@ public class Menu {
 			
 			
 			if (opcao == 6) {
->>>>>>> Model_Repository
 				System.out.println(Cores.TEXT_WHITE_BOLD+"\nPADARIA & CONFEITARIA L'DOCE- Com cada mordida um pedacinho do céu...");
 				
                  leia.close();
 				System.exit(0);
 			}
 			
-
-			switch (opcao) {
-			case 1:
-				System.out.println(Cores.TEXT_WHITE_BOLD+"\nCriar pedido:\n\n");
-
-				break;
-			case 2:
-				System.out.println(Cores.TEXT_WHITE_BOLD+"\nListar os produtos:\n\n");
 			//As opcoes de meu Menu
 			switch (opcao) {
 			case 1:
@@ -179,15 +150,9 @@ public class Menu {
 
 				pedido.listarTodos();
 				keyPress();
->>>>>>> Model_Repository
 				break;
 			case 3:
 				System.out.println(Cores.TEXT_WHITE_BOLD+"\nBuscar produto por número:\n\n");
-
-
-				break;
-			case 4:
-				System.out.println(Cores.TEXT_WHITE_BOLD+"\nAtualizar pedido:\n\n");
 
 				System.out.println("Digite o número de produto: ");
 				codigo = leia.nextInt();
@@ -230,33 +195,19 @@ public class Menu {
 					System.out.println("\nPedido não encontrado!");
 				
 				keyPress();
->>>>>>> Model_Repository
 				break;
 			case 5:
 				System.out.println(Cores.TEXT_WHITE_BOLD+"\nApagar pedido:\n\n");
-
-
-				break;
-			case 6:
-				System.out.println(Cores.TEXT_WHITE_BOLD+"\nPreco total:\n\n");
 
 				System.out.println("Digite o Numero de Pedido: ");
 				numero = leia.nextInt();
 				
 				pedido.deletar(numero);
 				keyPress();
->>>>>>> Model_Repository
 				break;
 			
 			default:
 				System.out.println(Cores.TEXT_WHITE_BOLD+"\nOpção Inválida!\n");
-
-				break;
-		    }
-	     }
-
-     }
-
 				
 				keyPress();
 				break;
@@ -279,6 +230,5 @@ public class Menu {
 
 		}
 	}
->>>>>>> Model_Repository
 
 }

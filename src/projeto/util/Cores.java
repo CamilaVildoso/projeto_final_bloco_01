@@ -25,10 +25,8 @@ public class Cores {
 	public static final String TEXT_PURPLE_BOLD = "\033[1;35m";
 	public static final String TEXT_CYAN_BOLD = "\033[1;36m";
 	public static final String TEXT_WHITE_BOLD = "\033[1;37m";
-<<<<<<< HEAD
 	public static final String TEXT_PINK_BOLD = "\033[1;35m";
-=======
->>>>>>> Model_Repository
+
 
 	//Reset Text Underline
 	public static final String TEXT_BLACK_UNDERLINED = "\033[4;30m"; 
