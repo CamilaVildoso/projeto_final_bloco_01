@@ -1,15 +1,16 @@
 package projeto;
 
-import java.util.Scanner;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
-import projeto.util.Cores;
-import projeto.model.pedidoPadaria;
-import projeto.model.pedidoConfiteria;
+import java.util.Scanner;
+
 import projeto.controller.ProjetoController;
 import projeto.model.Pedido;
-import java.io.IOException;
-import java.util.InputMismatchException;
+import projeto.model.pedidoConfiteria;
+import projeto.model.pedidoPadaria;
+import projeto.util.Cores;
 
 
 public class Menu {
